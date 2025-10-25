@@ -74,6 +74,20 @@ if len(st.session_state.data) > 0:
 else:
     st.info("ยังไม่มีข้อมูลให้สร้างรายงาน")
 
+api_key = st.text_input("🔑 ใส่ OpenAI API Key", type="password")
+if api_key:
+    import openai
+    openai.api_key = api_key
+    prompt = f"สรุปรายงานการทดลองจากข้อมูลนี้:\n{latest.to_dict()}"
+    completion = openai.ChatCompletion.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    st.write("### 📄 รายงานจาก GPT:")
+    st.write(completion.choices[0].message["content"])
+else:
+    st.info("กรุณาใส่ API Key เพื่อสร้างรายงานอัตโนมัติ")
+
 # --- SECTION 4 : FEEDBACK & CONFUSION MATRIX ---
 st.header("4️⃣ Feedback & Evaluation")
 
