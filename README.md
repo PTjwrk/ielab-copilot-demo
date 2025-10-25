@@ -4,7 +4,7 @@
 เก็บข้อมูล → วิเคราะห์ → สรุปรายงาน → รับ Feedback แบบ Real-time  
 
 ## Demo URL
-👉 [เปิด IE Lab Copilot บน Streamlit](https://ielab-copilot-demo-qbckygtutzfahrgksgp2cs.streamlit.app)
+👉 [[เปิด IE Lab Copilot บน Streamlit](https://ielab-copilot-demo-qbckygtutzfahrgksgp2cs.streamlit.app)](https://ielab-copilot-demo-qbckygttuzfahrgksgp2cs.streamlit.app/)
 
 ## ⚙️ วิธีใช้งาน
 1. กรอกข้อมูลแลบในแบบฟอร์ม  
